@@ -1,0 +1,47 @@
+<html>
+
+<head>
+
+   <script type="text/javascript">
+
+ a = +prompt('Введите первое число: ', 'a');
+    b = +prompt('Введите второе число: ', 'b');
+    var s=0;
+    var c=0;
+ document.write("<table>");
+ document.write("<tr><td>" + "Радиус" + "</td>");
+ document.write("<td>" + "Площадь" + "</td>");
+ document.write("<td>" + "Длина окружности" + "</tr></td>");
+  do
+  {
+   a+=0.3;     
+   document.write("<tr><td>" + a.toFixed(1) + "</td>");  
+   s = Math.pow(a,2)*Math.PI;
+   document.write("<td>" + s.toFixed(1) + "</td>");
+   c = 2*Math.PI*a;
+   document.write("<td>" + c.toFixed(1) + "</tr></td>");
+  }while(a <= b)
+    document.write("</table>");
+
+
+
+ 
+</script>
+<style>
+    table,td {
+    border: 1px solid rgb(19, 15, 15);
+    padding: 5px 10px;
+    margin: 10px;
+    text-align: center;
+    background: antiquewhite;
+    }
+td {
+    width: 15px;
+        }
+</style>
+</head> 
+<body>
+</body>
+
+
+</html>

@@ -1,0 +1,39 @@
+<html>
+<head >
+<script>
+
+    document.write("<table>");
+     x=prompt('Введите первое число');
+     x=Number(x);
+     v=prompt('Введите второе число');
+     v=Number(v);
+    for (var i = 1; i <= x; i++ ) {
+      document.write("<tr>");
+      document.write("<td>" + i + "</td>");
+     
+     for ( var j = 2; j <= v; j++ ) {
+       document.write("<td>" + i * j + "</td>");
+    }
+       document.write("</tr>");
+    }
+    document.write("</table>");
+
+    </script>
+<style>
+table,td {
+    border: 1px solid rgb(19, 15, 15);
+    padding: 5px 10px;
+    margin: 10px;
+    text-align: center;
+    background: antiquewhite;
+    }
+td {
+    width: 15px;
+        }
+</style>
+</head>
+<body> 
+
+
+</body>
+</html>

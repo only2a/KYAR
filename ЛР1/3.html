@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="EN">
+ <head>
+  <title>Animation</title>
+  <meta charset="UTF-8">
+  <style>
+
+  .ex1  {
+    border:10px rgb(3, 3, 92) double;
+  margin-left:5px;
+  margin-right:100px;
+  padding:1px;
+  height:700px;
+  background-color:rgb(76, 241, 186);
+  color:white;
+  }
+  .ball {
+  /*position: absolute;*/
+  background-image:"111.jpg";
+  border-radius: 100%;
+  margin-top: 430px;
+  margin-left: 75%;
+  animation: bounce 3s linear infinite; 
+}
+ @keyframes bounce {
+    0% { bottom:0;width:250px; height:250px;background-image: url("111.jpg");transform: rotate(0deg); }
+    100% { bottom:0;width:250px; height:250px;background-image: url("111.jpg");transform: rotate(360deg); }
+ } 
+ @keyframes dw {
+    0% { bottom:0;transform: skew(0deg); }
+    50% {background: linear-gradient(-45deg, blue,rgb(74, 168, 231));ransform: skew(-20deg,20deg); border: 5px rgb(253, 37, 8) double; }
+    100% {background:radial-gradient(center, rgb(8, 165, 79),rgb(21, 82, 3)); bottom:0;width:250px; height:250px;transform: skew(-40deg,40deg);border: 5px rgb(216, 8, 171) dotted;  }
+ }
+ @keyframes ram {
+    0% { bottom:0;  transform: rotate(10deg); border:1px rgb(208, 253, 8) solid;}
+    50% {border: 5px rgb(208, 253, 8) dashed; bottom:0; transform: rotate(30deg); }
+    100% { border: 10px rgb(235, 161, 2) dashed;bottom:0; transform: rotate(50deg); }
+ }
+ .square {
+     border:5px brown solid;
+     bottom: 0;
+     background-color:rgb(151, 6, 50);
+     width: 200px; 
+     height: 200px;
+     margin-top: -250px;
+     margin-left: 60px;
+    
+ }
+
+  .ellipse{
+     border:5px rgb(68, 218, 49) solid;
+     bottom: 0;
+     background-color:rgb(7, 172, 7);
+     border-radius: 100%;
+     margin-top: -430px;
+     width: 200px; 
+     height: 150px;
+     margin-left: 50%;
+  }
+    .ex1:hover .square{
+    animation: ram 3s infinite ease;
+ }
+    .ex1:hover .ellipse {
+      animation: dw 3s infinite ease;
+    }
+  </style>
+  </head> 
+  <body>
+  
+    <div class="ex1">
+        <div class="ball"></div>
+        <div class="square"> </div>
+        <div class="ellipse"> </div>
+    </div>
+   
+  </body>
+</html>

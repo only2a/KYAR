@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type='text/javascript'>
+var x=160; var y=10000, z=(35*y-25*x)/5+232, k=((8*y)/x+(5*x)/y-43)*6;
+
+function fun2() {
+  
+ document.write('z= '+ z +'<br />'  );
+  document.write('  k='+k+'<br />' ); 
+  
+}
+function fun3() {
+    d=z%k;
+ document.write('d= '+ d);
+}
+</script>
+</head>
+<body>
+
+<input type='button' value='Результат сложения строк "10"+"5"' onclick='fun2()' />
+<input type='button' value='Остаток при делении первого выражения на второе =' onclick='fun3()' />
+
+</body>
+</html>

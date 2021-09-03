@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type='text/javascript'>
+var x=160; var y=10000, z=(35*y-25*x)/5+232, k=((8*y)/x+(5*x)/y-43)*6; var z; var p,o,c;
+function fun1() {
+ alert('Вас приветствует учебный центр');
+}
+function fun2() {
+ x=prompt('Введите Ваше имя:', 'Имя');
+ alert('Здравствуйте, '+ x);
+ }
+ function fun3() {
+ 
+ if (confirm('Хотите стать Web-дизайнером?')==true)
+ {
+     alert('Учите стили CSS и JavaScript!');
+ }
+ else {
+    alert('Упускаете время!');
+ }
+}
+ function fun4() {
+    x=10+5;
+ document.write('10 +5= '+ x);
+}
+function fun5() {
+    x="10"+"5";
+ document.write('<span style="font-family:CONSOLAS;color:blue;">'+'"10"+"5"= '+ x+'</span>');
+}
+function fun6() {
+ x=22+"5";
+ document.write('<span style="font-size:200%">'+'22+"5"= '+'</span>'+ x);
+ }
+ function fun7() {
+ x="22"+5;
+ document.write('<span style="color:red">'+'"22"+5= '+'</span>'+ x);
+ }
+ function fun8() {
+ x=alert(' Результат сложения строки и числа всегда будет такой же,как и результат сложения строк')
+ document.write(+ x);
+}
+function fun9() {
+  
+  document.write('z= '+ z +'<br />'  );
+   document.write('  k='+k+'<br />' ); 
+   
+ }
+ function fun10() {
+     d=z%k;
+  document.write('d= '+ d);
+ }
+ function fun11(){
+z=prompt('Введите число:', 'Число');
+if((z<20)||(z>40)&&(z!=15)&&(z%5==0)) {
+    document.write('Правильное значение')
+
+}
+else { document.write('Неправильное значение')}
+}
+function fun12(){
+o=prompt('Введите число1:', 'Число1');
+p=prompt('Введите число2:', 'Число2');
+
+if(o>p) {
+    document.write(+o+'>'+p)
+
+}
+else { document.write(+o+'<'+p)}
+}
+function fun13(){
+o=prompt('Введите число1:', 'Число1');
+p=prompt('Введите число2:', 'Число2');
+(o>p)? document.write(+o+'>'+p):document.write(+o+'<'+p);
+}
+function fun14(){
+
+c=prompt('Какой по счёту день недели?','Введите число');
+switch (Number(c))
+{
+case 1: document.write("Понедельник"); break;
+case 2: document.write("Вторник"); break
+case 3: document.write("Среда"); break;
+case 4: document.write("Четверг"); break;
+case 5: document.write("Пятница"); break;
+case 6: document.write("Суббота"); break;
+case 7: document.write("Воскресенье"); break;
+default: document.write("Введено некрректное число"); break;
+}
+}
+function fun15(){ 
+try 
+{
+ alert("Начало кода в блоке try");
+ 
+}
+catch(error)
+{
+ alert("error detected!");
+}
+alert("Итоговый код.");
+alert("Конец кода в блоке try"); 
+}
+function fun16(){ 
+try {
+ alert("Начало кода в блоке try");
+ oshibka; //Ошибка, переменная не определена!
+ 
+}
+catch(error){
+ alert("error detected!");
+}
+alert("Итоговый код.");
+alert("Конец кода в блоке try");
+}
+</script>
+<style>
+    input[type=button]{
+        border:3px black sol ;
+       background-color: antiquewhite;
+       border-radius: 10px;
+    }
+    
+</style>
+</head>
+<body>
+
+<div  > 
+    <h3> Задание 1</h3>
+    <input type='button' value='Окно оповещения' onclick='fun1()' />
+    <input type='button' value='Окно подтверждения' onclick='fun2()' />
+    <input type='button' value='Окно запроса' onclick='fun3()' />
+</div>
+<div  > <h3> Задание 2</h3>
+    <input type='button' value='Результат сложения 10 +5' onclick='fun4()' />
+    <input type='button' value='Результат сложения строк "10"+"5"' onclick='fun5()' />
+    <input type='button' value='Результат сложения числа и строки 22+"5"' onclick='fun6()' />
+    <input type='button' value='Результат сложения числа и строки "22"+5' onclick='fun7()' />
+    <input type='button' value='Результат сложения строки и числа всегда будет ...' onclick='fun8()' /> 
+</div>
+<div  > <h3> Задание 3</h3>
+    <input type='button' value='Результат сложения строк "10"+"5"' onclick='fun9()' />
+    <input type='button' value='Остаток при делении первого выражения на второе =' onclick='fun10()' />
+</div>
+<div  > <h3> Задание 4</h3>
+    <input type='button' value='Otbor =' onclick='fun11()' />
+</div>
+<div  > <h3> Задание 5</h3>
+    <input type='button' value='Сравнение чисел =' onclick='fun12()' />
+    <input type='button' value='Сравнение чисел 2 cпособ =' onclick='fun13()' />
+</div>
+<div  > <h3> Задание 6</h3>
+    <input type='button' value='день недели' onclick='fun14()' />
+</div>
+<div  > <h3> Задание 7</h3>
+    <input type='button' value='Без ошибки' onclick='fun15()' />
+    <input type='button' value='С ошибкой' onclick='fun16()' />
+</div>
+</body>
+</html>

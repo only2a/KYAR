@@ -1,0 +1,39 @@
+<html>
+<head >
+<script>
+    function fun1(){
+function Student(name,surname,fiz,math,inform) {
+
+this.name=name;
+this.surname=surname;
+this.fiz=fiz;
+this.math=math;
+this.inform=inform;
+
+this.sred=function sred() {
+ 
+document.write('Средний балл '+this.name+' '+this.surname+' :' +((this.fiz+this.math+this.inform)/3).toFixed(2)+' <br\>');}
+}
+ 
+st1=new Student('Кирилл','Монгол',8,2,9);
+st2=new Student('Игорь','НеМонгол',7,3,10);
+st3=new Student('Артур','Казах',2,3,4);
+st1.sred();
+st2.sred();
+st3.sred();
+Student.prototype.pass=this.pass
+st1.pass='зачёт'
+document.write(st1.name +' '+ st1.surname+' '+ st1.fiz+', '+st1.math+', '+st1.inform +', '+st1.pass);
+
+}
+
+</script>
+<style>
+
+
+</style>
+</head>
+<body> 
+
+</body>
+</html>

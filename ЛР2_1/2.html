@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type='text/javascript'>
+function fun1() {
+    x=10+5;
+ document.write('10 +5= '+ x);
+}
+function fun2() {
+    x="10"+"5";
+ document.write('"10"+"5"= '+ x);
+}
+function fun3() {
+ x=22+"5";
+ document.write('22+"5"= '+ x);
+ }
+ function fun4() {
+ x="22"+5;
+ document.write('"22"+5= '+ x);
+ }
+ function fun5() {
+ x=alert(' Результат сложения строки и числа всегда будет такой же,как и результат сложения строк')
+ document.write(+ x);
+ }
+</script>
+</head>
+<body>
+<input type='button' value='Результат сложения 10 +5' onclick='fun1()' />
+<input type='button' value='Результат сложения строк "10"+"5"' onclick='fun2()' />
+<input type='button' value='Результат сложения числа и строки 22+"5"' onclick='fun3()' />
+<input type='button' value='Результат сложения числа и строки "22"+5' onclick='fun4()' />
+<input type='button' value='Результат сложения строки и числа всегда будет ...' onclick='fun5()' />
+</body>
+</html>

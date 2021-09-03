@@ -1,0 +1,40 @@
+
+<html>
+<head>
+<script type='text/javascript'>
+
+function fun1(){ 
+try 
+{
+ alert("Начало кода в блоке try");
+ 
+}
+catch(error)
+{
+ alert("error detected!");
+}
+alert("Итоговый код.");
+alert("Конец кода в блоке try"); 
+}
+function fun2(){ 
+try {
+ alert("Начало кода в блоке try");
+ oshibka; //Ошибка, переменная не определена!
+ 
+}
+catch(error){
+ alert("error detected!");
+}
+alert("Итоговый код.");
+alert("Конец кода в блоке try");
+}
+
+</script>
+</head>
+<body>
+    <input type='button' value='Без ошибки' onclick='fun1()' />
+    <input type='button' value='С ошибкой' onclick='fun2()' />
+
+
+</body>
+</html>
