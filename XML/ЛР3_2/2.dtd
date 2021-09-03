@@ -1,0 +1,8 @@
+<!DOCTYPE music [
+<!ELEMENT music (num)>
+<!ELEMENT num (singer, audition, bestsong, lastrel)
+<!ELEMENT singer (#PCDATA)>
+<!ELEMENT audition (#PCDATA)>
+<!ELEMENT bestsong (#PCDATA)>
+<!ELEMENT lastrel (#PCDATA)>
+]>

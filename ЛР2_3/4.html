@@ -1,0 +1,49 @@
+<html>
+<head >
+<script>
+ var txt,spec,x,y,z,w,e,s,d=new Date();
+ txt=new Array();
+ txt[0]='Год';
+ txt[1]='Месяц';
+ txt[2]='День';
+ txt[3]='Час';
+ txt[4]='Минуты';
+ txt[5]='Секунды';
+ spec=new Array();
+ x=d.getFullYear();
+ y=d.getMonth();
+ z=d.getDate();
+ w=d.getHours();
+ e=d.getMinutes();
+ s=d.getSeconds();
+ spec[0]=x; spec[1]=y; spec[2]=z; spec[3]=w; spec[4]=e; spec[5]=s;
+ document.write(d);
+ document.write("<table>");   
+    for (var i = 0; i <6 ; i++ ) {
+      document.write("<tr>");
+      document.write("<td>" + txt[i] + "</td>");    
+     for ( var j = 2; j <= 2; j++ ) {  
+       document.write("<td>" + spec[i] + "</td>");
+    }
+       document.write("</tr>");
+    }
+    document.write("</table>");
+    </script>
+<style>
+table,td {
+    border: 1px solid rgb(19, 15, 15);
+    padding: 5px 10px;
+    margin: 10px;
+    text-align: center;
+    background: antiquewhite;
+    }
+td {
+    width: 15px;
+        }
+</style>
+</head>
+<body> 
+
+
+</body>
+</html>

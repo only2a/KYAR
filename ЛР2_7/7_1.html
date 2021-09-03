@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>LR7_ФОРМЫ</title>
+        <style>
+            #f1{
+                width: 400px;
+                margin:0 auto;
+                background-color: antiquewhite;
+            }
+             
+            #f2{
+                width: 100px;
+                margin:0 auto;
+                background-color: whitesmoke;
+            }
+        </style>
+    </head>
+<body>
+   <form name="F1" ; onsubmit="alert('submit!')" id="f1">
+       <fieldset>
+           <legend>Карточка учащегося</legend><br />
+           <textarea id="ttt"> </textarea><br/>
+           <br /><input type='text' name='Surname' placeholder="Фамилия" id="snm" /><br/>
+           <input type='text' name='firstname' placeholder="Имя" id="fnm"/><br /><br/>
+           Специальность:
+           <select id="s1">
+               <option value="Поит">ПОИТ</option>
+               <option value="ИСИТ">ИСИТ</option>
+               <option value="ПОБМС">ПОИБМС</option>
+               <option value="ДЭВИ">ДЭВИ</option>
+           </select>
+           <br/><br/><br/><br/>Курс<br/>
+           <input type="radio" value="1" id="1" name="kurs"/>1
+           <input type="radio" value="2" id="2" name="kurs"/>2
+           <input type="radio" value="3" id="3" name="kurs"/>3
+           <input type="radio" value="4" id="4" name="kurs"/>4<br/>
+           Предметы<br/>
+           <input type="checkbox" name="lessons" value="КЯР" id="kiar"/>КЯР
+           <input type="checkbox" name="lessons" value="КСИС" id="ksis"/>КСИС
+           <input type="checkbox" name="lessons" value="ЯП" id="iap"/>ЯП
+           <input type="checkbox" name="lessons" value="ОАИП" id="oaip"/>ОАИП
+           <input type="checkbox" name="lessons" value="Математика" id="math"/>Математика   <br/>
+           <br/><input type="submit" value="Отправить" /> <input type="reset" value="Рестарт"/> <br/>
+            <br/><input type="button" value="Напечатать" onclick="fun()" /> 
+       </fieldset>
+   </form>
+   <input type="button" onclick="fun111()" />
+   <br/> <br/><br/><br/>
+   <form id="f2"><fieldset>
+       <legend>Task 4</legend>
+    <input type="button" value="Cписок" onclick="fun1()"/> <br/>
+</fieldset>
+   </form>
+<script src="7.js">
+
+</script>
+    </body></html>
+        

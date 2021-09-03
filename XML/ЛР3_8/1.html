@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <title>Document1</title>
+<head>
+    <style>
+        #txt {
+            stroke: black;
+            stroke-width: 1;
+            fill: red;
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #txt2 {
+            stroke: rgb(214, 49, 49);
+            stroke-width: 2;
+            fill: lightblue;
+            font-size: 30px;
+            font-style: oblique;
+
+        }
+    </style>
+</head>
+
+<body>
+    <svg width="500" height="400">
+        <text x="50" y="350" rotate="30" textLength="100" id="txt" id="an">And you?</text>
+        <text x="20" y="150">Hello.
+            <tspan id="txt2" dx="20" dy="30" rotate="-30">How are you?</tspan>
+        </text>
+
+
+        <defs>
+            <path id="textpath" fill="none" stroke="green" stroke-width="2"
+                d="M0.057,0.024c0,0,10.99,51.603,102.248,51.603c91.259,0,136.172,53.992,136.172,53.992" />
+        </defs>
+        <use xlink:href="#textpath" />
+        <text x="30" y="50" font-size="20px" id="gg">
+            <textPath xlink:href="#textpath">
+                textpath
+            </textPath>
+        </text>
+        <animate Transform xlink:href="#gg" attributeName="x" values="30;210;30;0" dur="5s" repeatCount="indefinite" />
+</svg>
+ 
+
+</body>

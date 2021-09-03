@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <script src="http://code.jquery.com/jquery-latest.js"></script>
+<style type="text/css">
+body{
+        background-color: antiquewhite;
+}
+#block {
+    position:absolute; 
+    background-color:rgb(60, 124, 187); 
+    left:50px;
+    width:90px; 
+    height:90px;
+    margin:5px; 
+}
+.step {
+    position:absolute; 
+}
+
+</style>  
+
+ </head>
+
+
+<div id="block"> </div>
+<button class="btn"></button>
+<script>
+
+
+$('.btn').click(function(){
+
+$("#block").animate({"left": "500px"},{step: function(now, fx) {$(fx.elem).offset({top: Math.sin(now/100)*200+320});}}); 
+$("#block").animate({"left": "50px"},{step: function(now, fx) {$(fx.elem).offset({top: Math.sin(now/100)*200+320});}}); 
+        
+
+});
+
+
+
+</script>
+   </body>
+</html>

@@ -1,0 +1,133 @@
+<!--<!DOCTYPE html>
+<head>
+    <script src="1.js"></script>
+</head>
+<body>юю
+
+</body>
+</html> -->
+<html>
+
+<head>
+  <TITLE>LR9_ДВИЖЕНИЕ/ГРАФИКА</TITLE>
+  <style>
+    #task3 {
+      position: relative;
+      cursor: pointer;
+    }
+
+    form {
+      border: 3px solid sienna;
+      width: 300px;
+    }
+
+    #nav {
+      display: flex;
+      
+    }
+
+    .menu-item {
+      width: 100px;
+      border: 2px dotted black;
+      background: skyblue;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 20px;
+      padding: 10px;
+      color: black;
+      text-align: center;
+    }
+
+    body {
+      background-color: blanchedalmond;
+      position: relative;
+    }
+
+    .menu-item >.submenu {
+      transition: 0.3s ease-in-out;
+      display: none;
+      padding: 10px;
+      border: 2px dashed black;
+      background: lightsalmon;
+      position: absolute;
+      cursor: pointer;
+      color: red;
+      width: 100px;
+      border-radius: 4px;
+      margin-left: -10px;
+      margin-top: 10px;
+    }
+
+    #myimg {
+      border: 2px solid black;
+      border-radius: 10px;
+      background-color: khaki;
+      width: 200px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>Task 1</h3>
+  <div id="land"><img SRC="1.jpg" style=" width: 300px;"></div>
+  <div id="txt">QQQQ</div>
+  <br />
+  <h3>Task 2</h3>
+  <div><img id="task3" src="2.jpg" onclick="fun3()" width="300px"></div>
+  <h3>Task 3</h3><br />
+  <div id="myimg">
+    <a href="3.html" style="font-size: 20px;">Задание тут</a>
+  </div>
+
+  <br />
+  <h3>Task 4 & 5 </h3>
+  <form>
+    <select id="s1">
+      <option value="1">Черный</option>
+      <option value="2">Зеленый</option>
+      <option value="3">Красный</option>
+
+    </select>
+    <br />
+    <input type="radio" value="1" id="1" name="kurs" />y=x^2
+    <input type="radio" value="2" id="2" name="kurs" />y=x^3
+    <input type="radio" value="3" id="3" name="kurs" />y=sin(x)
+    <input type="radio" value="4" id="4" name="kurs" />y=cos(x)<br />
+    <input type="button" value="Построить график" onclick="fun4()" />
+  </form>
+
+
+
+
+
+  <h3>Task 6</h3>
+  <div id="nav">
+    <div class="menu-item">
+      Меню 1
+      <div class="submenu">
+        Подменю
+      </div>
+    </div>
+    <div class="menu-item">
+      Меню 2
+      <div class="submenu">
+        Подменю
+      </div>
+    </div>
+    <div class="menu-item">
+      Меню 3
+      <div class="submenu">
+        Подменю
+      </div>
+    </div>
+  </div>
+
+
+</body>
+<script src="1.js">
+
+</script>
+
+</html>

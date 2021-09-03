@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Задание 3</title>
+
+<script >
+var dx=10, dy=10, d=1;
+
+setTimeout(function(){
+    document.all.xtt.style.left=0;
+    setInterval (function(){
+        var y=parseInt(document.all.xtt.style.top);
+        var x=parseInt(document.all.xtt.style.left);
+
+        document.all.xtt.style.top=y+dy;
+        document.all.xtt.style.left=x+dx;
+
+        xp=parseInt(document.all.xtt.style.left);
+        yp=parseInt(document.all.xtt.style.top);
+
+         if (xp > 1000) { dx=dx-d;}
+        if (xp < 0) { dx=dx+d;}
+        if (yp > 200) { dy=dy-d;}
+        if (yp < 100) { dy=dy+d; } 
+    },25);
+},100);
+
+
+
+
+
+</script>
+</head>
+<body >
+    <div id="xtt" style="position:absolute; top:150px; left:0;">
+        aaaaaaaa
+        </div>
+
+</body>
+</html>

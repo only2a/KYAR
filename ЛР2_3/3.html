@@ -1,0 +1,57 @@
+<html>
+<head >
+<script>
+var str,str2,str3;
+
+str='Пилипович Дмитрий Сергеевич';
+
+str2=str;
+str3=str;
+function fun0(){
+    document.write(str);
+}
+function fun1(){
+    document.write(str.length);
+}
+
+function fun2(){
+ str2=document.write(str2.toUpperCase());
+}
+function fun3(){
+ str3=document.write(str3.toLowerCase());
+}
+function fun4(){
+    document.write(str.concat(str2.toUpperCase(),str3.toLowerCase()));
+    
+}
+function fun5(){
+    document.write(str.concat(str2.toUpperCase(),str3.toLowerCase()).replace('Пилипович Дмитрий Сергеевич','ФИО:'));
+}
+function fun6(){
+    document.write(str+'<br \/>')
+    document.write(str.concat(str2.toUpperCase(),str3.toLowerCase()).replace('Пилипович Дмитрий Сергеевич','ФИО:'));
+
+}
+</script>
+<style>
+
+input[type=button]{
+        border:3px black sol ;
+       background-color: antiquewhite;
+       border-radius: 10px;
+       margin-top: 30px;
+       outline:none
+    }   
+    
+</style>
+</head>
+<body> 
+<div><input type="button" value="Начальная строка" onclick="fun0()" /></div>
+<div><input type="button" value="Длина" onclick="fun1()" /></div>
+<div><input type="button" value="Верхний ригистр" onclick="fun2()" />
+<input type="button" value="Нижний ригистр" onclick="fun3()" /></div>
+<div><input type="button" value="Объединение" onclick="fun4()" /></div>
+<div><input type="button" value="Замена" onclick="fun5()" /></div>
+<div><input type="button" value="Итог" onclick="fun6()" /></div>
+</body>
+</html>

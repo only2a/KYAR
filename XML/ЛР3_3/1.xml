@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="1.xslt"?>
+<music>
+	<num>
+		<singer>Скриптонит</singer>
+		<audition>330M</audition>
+		<bestsong>Космос</bestsong>
+		<lastrel>Свистки и бумажки</lastrel>
+	</num>
+	<num>
+		<singer>Miyagi*Andi Panda</singer>
+		<audition>324M</audition>
+		<bestsong>Minor</bestsong>
+		<lastrel>Патрон</lastrel>
+	</num>
+		<num>
+		<singer>CAPTOWN</singer>
+		<audition>210M</audition>
+		<bestsong>Разная дрянь</bestsong>
+		<lastrel>Duracell</lastrel>
+	</num>
+</music>

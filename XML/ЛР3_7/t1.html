@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+
+<head>
+</head>
+
+<body>
+    <svg width="1000" height="700">
+        <style>
+        </style>
+        <circle r="30" cx="100" cy="100" id="circ" fill="lightgreen" stroke="lightblue" stroke-width="3" />;
+        <animate xlink:href="#circ" attributeName="cx" values="20%;70%;10%" dur="2s" />
+        <animate xlink:href="#circ" attributeName="fill" values="lightgreen;blue;lightgreen" dur="2s" />
+        <animate xlink:href="#circ" attributeName="r" values="30;20;10;20;30" dur="2s" />
+        <animate xlink:href="#circ" attributeName="stroke-width" values="3;5;12;5;3" dur="2s" begin="2s" />
+        <defs>
+            <path id="bubble" d="M50 6.25c27.614 0 50 18.188 50 40.625 0 22.437-22.386 40.625-50 40.625-2.652 0-5.255-0.169-7.795-0.493-10.74 10.74-23.56 12.666-35.955 12.949v-2.629c6.693-3.279 12.5-9.252 12.5-16.078 0-0.953-0.074-1.888-0.211-2.802-11.308-7.448-18.539-18.824-18.539-31.573 0-22.437 22.386-40.625 50-40.625z"/>       
+        </defs>
+        <use xlink:href="#bubble" id="bubble1" x="50" y="180" stroke="red" stroke-width="3" fill="lightblue" />
+        <animateTransform  xlink:href="#bubble1"  attributeName="transform" attributeType="XML" type="rotate" from='0' to='-30' dur="5s"
+            repeatCount="indefinite" />
+        <circle r="30" cx="100" cy="400" id="cir" fill="purple" stroke="pink" stroke-width="10" />;
+        <animate xlink:href="#cir" attributeName="stroke-dasharray" values="50;50;0" dur="3s" begin="mouseover" />
+        <animate xlink:href="#cir" attributeName="stroke-width" values="0;10" dur="2s" begin="mouseover" />
+        <animate xlink:href="#cir" attributeName="stroke-dashoffset" values="30;10;60" dur="2s" begin="mouseover" />
+    </svg>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<html>
+<head >
+<script>
+var spec,txt,x,y,z,u,max=0,min,k;/* x=Number(x);
+y=Number(y);
+z=Number(z);
+u=Number(u);*/
+txt=new Array();
+txt[0]='6*П^2 +3*e^8=';
+txt[1]='2*cos(4) + cos(12) + 8*e^3=';
+txt[2]='3*sin(9) + ln(5) + 3^(1/2)=';
+txt[3]='2*tan(5) + 6*П + 12^(1/2)=';
+spec=new Array();
+x=6*Math.pow(Math.PI,2)+3*Math.pow(Math.E,8);
+y=2*Math.cos(4) + Math.cos(12) + 8*Math.pow(Math.E,3);
+z=3*Math.sin(9)+Math.log(5)+ Math.sqrt(3);
+u=2* Math.tan(5)+ 6 * Math.PI+ Math.sqrt(12);
+spec[0]=x; spec[1]=y; spec[2]=z; spec[3]=u;
+for(i=0,j=1;i<4,j<=4;j++,i++){
+ document.write(j+'. '+txt[i]+spec[i]+'<br />')
+}
+for(i=0;i<4;i++){
+ if(spec[i]>max){ max=spec[i]; k=i;}
+}
+document.write("max="+max+". Под номером:"+(k+1)+"<br />");
+min=max;
+for(i=0;i<4;i++){
+ if(spec[i]<=min){ min=spec[i]; k=i;}
+}
+document.write("min="+min+". Под номером:"+(k+1)+"<br />");
+</script>
+<style>
+
+        
+</style>
+</head>
+<body> 
+
+
+</body>
+</html>

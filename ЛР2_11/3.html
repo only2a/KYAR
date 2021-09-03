@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script src="3.js"></script>
+    <style>
+        #nav{
+            width: 1000px;
+            height: 1000px;
+            align-items: center;
+            justify-content: center;
+            margin-left: 25%;
+            margin-top: 25%;
+        }
+.menu_item1,
+.menu-item2,
+.menu-item3 {
+    background: #020302;
+    float: left;
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    width: auto;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    min-width: 150px;
+  
+}
+
+.menu_item1 a,
+.menu-item2 a,
+.menu-item3 a{
+color:#eeea04;
+ text-decoration: none;
+}
+.menu_item1 .submenu1,
+.menu-item2 .submenu2,
+.menu-item3 .submenu3 {
+    margin-left: -10px;
+    margin-top: 17px;
+    padding: 10px;
+    width: auto;
+    display: none;
+    border-radius: 10px;
+    background: #eeea04;
+    position: absolute;
+    cursor: pointer;
+    color: rgb(3, 2, 2);
+    min-width: 100px;
+}
+
+.menu_item1 .submenu1 a,
+.menu-item2 .submenu2 a,
+.menu-item3 .submenu3 a{
+     color: rgb(0, 0, 0);
+}
+body{
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+}
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div id="menu_item1" class="menu_item1">
+            <a target="_blank" href="1.html">ЛР11(8)</a>
+            <div class="submenu1">
+                Подменю
+            </div>
+        </div>
+        <div class="menu-item2">
+            <a target="self" href="2.html">Задания из ЛР 9_10</a> 
+            <div class="submenu2">
+                <a target="_blank" href="4.html">Задание 3(ЛР9)</a>
+            </div>
+        </div>
+        <div class="menu-item3">
+            <a target="self" href="#">Меню</a>
+            <div class="submenu3">
+               Подменю
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"/>
+<TITLE>XML 5</TITLE>
+</head>
+<body>
+    <input type="file" onchange="processFiles(this.files)">
+    <p id="output"></p>
+    <script type="text/javascript">
+        function processFiles(files) {
+            var file = files[0];
+            output = document.getElementById("output");
+            var reader = new FileReader();
+            reader.readAsText(file);
+            reader.onload = function (e){
+                xml = e.target.result;
+                if (window.DOMParser)
+                {
+                parser=new DOMParser();
+                xmlDOC=parser.parseFromString(xml, "application/xml");
+                }
+                else
+                {
+                    xmlDOC=new ActiveXObject("Microsoft.XMLDOM");
+                    xmlDoc.async=false;
+                    xmlDoc.loadXML(xml);
+                }
+                studentsList = xmlDOC.getElementsByTagName("STUDENT");
+                i = 1;
+                var studentName = studentsList[i].getElementsByTagName("NAME") [0].innerHTML;
+                var studentSurName = studentsList[i].getElementsByTagName("SURNAME")[0].innerHTML;
+                var middleName = studentsList[i].getElementsByTagName("MIDDLE_NAME")[0].innerHTML;
+                var grade = studentsList[i].getElementsByTagName("GRADE")[0].innerHTML;
+                var birthYear = studentsList[i].getElementsByTagName("BIRTH_YEAR")[0].innerHTML;
+            output.innerHTML +="<br/>"+ "ФИО: "+ studentSurName +" "+ studentName + " "+ middleName +"<br/>" +"Средний балл: "+ grade + "<br/>" +"Год рождения: "+ birthYear + "<br/>";
+            }
+}
+    </script>
+</body>
+</html>
